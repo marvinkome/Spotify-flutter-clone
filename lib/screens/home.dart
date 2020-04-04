@@ -9,7 +9,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Current count'),
+      child: Text('Home screen'),
     );
   }
 }

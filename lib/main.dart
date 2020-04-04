@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_clone/screens/app_player.dart';
+import 'package:spotify_clone/widgets/slide_up_router.dart';
 import 'app.dart';
 
 class MainApp extends StatelessWidget {
@@ -6,6 +8,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // app settings
       title: 'Spotify Clone',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -15,8 +18,17 @@ class MainApp extends StatelessWidget {
           highlightColor: Colors.transparent,
           splashColor: Colors.transparent),
 
-      //
-      home: AppRoot(),
+      // routes
+      onGenerateRoute: (RouteSettings settings) {
+        switch (settings.name) {
+          case '/player':
+            return SlideUpRoute(widget: AppPlayer());
+            break;
+          default:
+            return SlideUpRoute(widget: AppRoot());
+            break;
+        }
+      },
     );
   }
 }
