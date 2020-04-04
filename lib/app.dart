@@ -25,7 +25,7 @@ class _AppRootState extends State<AppRoot> {
         children: <Widget>[
           Expanded(
               child: Center(
-            child: Text('Hello World'),
+            child: _children[_currentTabIndex],
           )),
           AppBottom(_currentTabIndex, (int index) => setState(() => _currentTabIndex = index))
         ],
