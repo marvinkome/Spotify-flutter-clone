@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/screens/app_player.dart';
-import 'package:spotify_clone/widgets/slide_up_router.dart';
+import 'package:spotify_clone/utils/slide_up_router.dart';
 import 'app.dart';
 
 class MainApp extends StatelessWidget {

@@ -18,7 +18,7 @@ class _AppPlayerState extends State<AppPlayer> {
         // styling
         decoration: BoxDecoration(
           image:
-              DecorationImage(image: AssetImage("assets/images/album_art.jpeg"), fit: BoxFit.cover),
+              DecorationImage(image: AssetImage("assets/images/p1-enswbl.jpeg"), fit: BoxFit.cover),
         ),
 
         child: BackdropFilter(
@@ -84,7 +84,7 @@ class _AppPlayerState extends State<AppPlayer> {
             Container(
                 padding: EdgeInsets.fromLTRB(padding, 60, padding, 60),
                 child: Image.asset(
-                  "assets/images/album_art.jpeg",
+                  "assets/images/p1-enswbl.jpeg",
                   width: MediaQuery.of(context).size.width - padding * 2,
                   height: MediaQuery.of(context).size.width - padding * 2,
                 )),

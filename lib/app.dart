@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_clone/screens/app_player.dart';
-import 'package:spotify_clone/screens/home.dart';
+import 'package:spotify_clone/screens/home/home.dart';
+
+import 'screens/home/home.dart';
 
 class AppRoot extends StatefulWidget {
   @override
@@ -72,7 +73,7 @@ class AppBottom extends StatelessWidget {
                     ),
 
                     // song title and artist
-                    Text('Lit . Kiasmos'),
+                    Text('Exits . Foals'),
 
                     // play/pause Icon
                     IconButton(
@@ -96,9 +97,5 @@ class AppBottom extends StatelessWidget {
         ],
       ),
     );
-  }
-
-  Route _createRoute() {
-    // return PageRouteBuilder(pageBuilder: (context) => '/second');
   }
 }

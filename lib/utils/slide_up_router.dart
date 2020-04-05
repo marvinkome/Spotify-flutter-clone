@@ -10,7 +10,7 @@ class SlideUpRoute extends PageRouteBuilder {
           var begin = Offset(0.0, 1.0);
           var end = Offset.zero;
 
-          var curve = Curves.ease;
+          var curve = Curves.easeInOut;
           var curveTween = CurveTween(curve: curve);
 
           var tween = Tween(begin: begin, end: end).chain(curveTween);
