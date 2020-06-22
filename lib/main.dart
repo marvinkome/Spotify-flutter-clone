@@ -16,7 +16,8 @@ class MainApp extends StatelessWidget {
           primaryColor: Colors.green[600],
           accentColor: Colors.white,
           highlightColor: Colors.transparent,
-          splashColor: Colors.transparent),
+          splashColor: Colors.transparent,
+          fontFamily: 'Rubik'),
 
       // routes
       onGenerateRoute: (RouteSettings settings) {

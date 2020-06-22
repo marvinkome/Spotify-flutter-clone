@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/screens/home/home.dart';
-
-import 'screens/home/home.dart';
+import 'package:spotify_clone/screens/search.dart';
 
 class AppRoot extends StatefulWidget {
   @override
@@ -12,9 +11,7 @@ class _AppRootState extends State<AppRoot> {
   int _currentTabIndex = 0;
   final List<Widget> _children = [
     Home(),
-    Center(
-      child: Text('This is the search page'),
-    ),
+    SearchPage(),
     Center(
       child: Text('This is the library page'),
     )
